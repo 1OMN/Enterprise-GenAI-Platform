@@ -20,5 +20,5 @@ graph TD
     Gateway -->|Auth| Guard[Security Guardrails]
     Guard --> Router{Semantic Router}
     Router -->|Complex| GPT4[GPT-4o External]
-    Router -->|Sensitive/Routine| LocalLLM[Local Inference (vLLM)]
-    LocalLLM -->|Context| VectorDB[(Qdrant Vector DB)]
+    Router -->|Sensitive/Routine| LocalLLM[Local Inference vLLM]
+    LocalLLM -->|Context| VectorDB[Qdrant Vector DB]
